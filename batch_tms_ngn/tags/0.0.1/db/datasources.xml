@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<datasources>
+	<datasource name="db2-tms_db-tellink">
+		<type>db2udb</type>
+		<alias>db2-tms_db-tellink</alias>
+		<env>development</env>
+		<url>jdbc:db2://tms-d-vip.ucsd.edu:50030/tms_db</url>
+		<driver>com.ibm.db2.jcc.DB2Driver</driver>
+		<database>tms</database>
+		<userid>apcprod</userid>
+		<passwordfile>/export/home/apcprod/.pwd</passwordfile>
+		<minconn>0</minconn>
+		<maxconn>90</maxconn>
+		<timeout>18000000</timeout>
+	</datasource>
+	<datasource name="db2-tms_db-tellink">
+		<type>db2udb</type>
+		<alias>db2-tms_db-tellink</alias>
+		<env>qa</env>
+		<url>jdbc:db2://tms-q-vip.ucsd.edu:50030/tms_db</url>
+		<driver>com.ibm.db2.jcc.DB2Driver</driver>
+		<database>tms</database>
+		<userid>apcprod</userid>
+		<passwordfile>/export/home/apcprod/.pwd</passwordfile>
+		<minconn>0</minconn>
+		<maxconn>90</maxconn>
+		<timeout>18000000</timeout>
+	</datasource>
+	<datasource name="db2-tms_db-tellink">
+		<type>db2udb</type>
+		<alias>db2-tms_db-tellink</alias>
+		<env>production</env>
+		<url>jdbc:db2://tms-p-vip.ucsd.edu:50030/tms_db</url>
+		<driver>com.ibm.db2.jcc.DB2Driver</driver>
+		<database>tms</database>
+		<userid>apcprod</userid>
+		<passwordfile>/export/home/apcprod/.db2pwd</passwordfile>
+		<minconn>0</minconn>
+		<maxconn>90</maxconn>
+		<timeout>18000000</timeout>
+	</datasource>
+
+        <datasource name="db2-dw_db-nobody">
+                <type>db2udb</type>
+                <alias>db2-dw_db-nobody</alias>
+                <env>development</env>
+                <url>jdbc:db2://tms-d-vip.ucsd.edu:50030/dw_db</url>
+                <driver>com.ibm.db2.jcc.DB2Driver</driver>
+                <database>ga_extension</database>
+                <userid>apcprod</userid>
+                <passwordfile>/export/home/apcprod/.db2pwd</passwordfile>
+                <minconn>0</minconn>
+                <maxconn>90</maxconn>
+                <timeout>18000000</timeout>
+        </datasource>
+        <datasource name="db2-dw_db-nobody">
+                <type>db2udb</type>
+                <alias>db2-dw_db-nobody</alias>
+                <env>qa</env>
+                <url>jdbc:db2://tms-q-vip.ucsd.edu:50030/dw_db</url>
+                <driver>com.ibm.db2.jcc.DB2Driver</driver>
+                <database>ga_extension</database>
+                <userid>apcprod</userid>
+                <passwordfile>/export/home/apcprod/.db2pwd</passwordfile>
+                <minconn>0</minconn>
+                <maxconn>90</maxconn>
+                <timeout>18000000</timeout>
+        </datasource>
+        <datasource name="db2-dw_db-nobody">
+                <type>db2udb</type>
+                <alias>db2-dw_db-nobody</alias>
+                <env>production</env>
+                <url>jdbc:db2://tms-p-vip.ucsd.edu:50030/dw_db</url>
+                <driver>com.ibm.db2.jcc.DB2Driver</driver>
+                <database>ga_extension</database>
+                <userid>apcprod</userid>
+                <passwordfile>/export/home/apcprod/.db2pwd</passwordfile>
+                <minconn>0</minconn>
+                <maxconn>90</maxconn>
+                <timeout>18000000</timeout>
+        </datasource>
+</datasources>

@@ -1,0 +1,17 @@
+#================================================================#
+# ngn_inactivate_PPSPL330   This control file will update the    #
+#                   PPSPL330 mainframe connection to a status of #
+#                   inactive.This will be reset again after      #
+#                   the next run of the job.                     #
+#                                                                #
+# Modification History:                                          #
+# Date:     By:   Description:                                   #
+# 5/16/97   OG    Original Conversion to new perl script         #
+# 3/30/07   JL    Inactivate status of PPSPL330                  #
+#================================================================#
+
+[main]
+
+[unix_routine]
+xql -Uautosys -Pautosys -c "update ext_job  set status = 8  where ext_job_name = 'PPSPL330'"
+

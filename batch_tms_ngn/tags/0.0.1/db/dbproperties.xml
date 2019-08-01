@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dbproperties>
+	<alias name="ngn_db">
+		<env>production</env>
+		<datasource>db2-tms_db-tellink</datasource>
+		<database>ngn</database>
+		<proxy>true</proxy>
+	</alias>
+	<alias name="ga_extension">
+		<env>production</env>
+		<datasource>db2-dw_db-nobody</datasource>
+		<database>ga_extension</database>
+		<proxy>true</proxy>
+	</alias>
+</dbproperties>
